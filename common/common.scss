@@ -1,0 +1,165 @@
+@import 'variables';
+
+// Body
+// *------------------------------------------------*
+body {
+  background: url($texture);
+  background-attachment: fixed;
+  background-size: 200px;
+}
+
+// Header
+// *------------------------------------------------*
+.d-header {
+  height: 5em;
+  background-image: $header-gradient;
+}
+
+// New Topic Button
+// *------------------------------------------------*
+#create-topic {
+  color: $color-white;
+  background-color: $color-eton-blue;
+  border-radius: $radius-4;
+  .fa {
+    color: $color-white;
+  }
+  &:hover {
+    background: $color-emrald;
+    color: $color-white;
+    border-radius: $radius-4;
+    box-shadow: 0 1px 8px $color-emrald;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+// Container
+// *------------------------------------------------*
+#main-outlet {
+  background: $secondary;
+}
+
+// Buttons
+// *------------------------------------------------*
+.btn {
+  background: $primary-low;
+  color: $color-smoky-black;
+  border-radius: $radius-6;
+  .discourse-no-touch & {
+    &:hover,
+    &.btn-hover {
+      color: $color-white;
+      background: $color-eton-blue;
+      .d-icon {
+        color: $color-white;
+      }
+    }
+  }
+  &:hover,
+  &.btn-hover {
+    color: $color-white;
+    background: $color-eton-blue;
+    .d-icon {
+      color: $color-eton-blue;
+    }
+  }
+  &:active,
+  &.btn-active {
+    background-image: none;
+    background-color: $color-eton-blue;
+    color: $color-smoky-black;
+    .d-icon {
+      color: $color-smoky-black;
+    }
+  }
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $color-white;
+  .d-icon {
+    color: $color-white;
+  }
+  &:active,
+  &.btn-active {
+    .d-icon {
+      color: $color-white;
+    }
+  }
+  .discourse-no-touch & {
+    &:hover,
+    &.btn-hover {
+      background-color: $danger-hover;
+      color: $color-platinum;
+      .d-icon {
+        color: $color-platinum;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  .d-icon {
+    color: $color-smoky-black;
+  }
+}
+
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  border: 1px solid $primary-low;
+}
+
+// Modal
+// *------------------------------------------------*
+.modal-inner-container {
+  border-radius: $radius-4;
+  background-color: $secondary-very-high;
+  .modal-header {
+    border-bottom: 1px solid $header_primary-medium;
+  }
+  .modal-footer {
+    border-top: 1px solid $header_primary-medium;
+  }
+}
+
+.list-controls .combo-box .combo-box-header {
+  border: 1px solid $color-lilac;
+  background: none;
+}
+
+// Topic Page
+// *------------------------------------------------*
+.timeline-container .topic-timeline {
+  .timeline-scrollarea {
+    border-color: $color-eton-blue;
+  }
+  .timeline-handle {
+    background-color: $color-emrald;
+  }
+}
+
+.post-stream .names .username {
+  font-size: 1.1em;
+}
+
+// Advanced Search
+// *------------------------------------------------*
+.search-container .search-advanced-sidebar {
+  .search-advanced-title {
+    background: $color-platinum;
+  }
+}
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  .nav-pills>li a.active {
+    background: none;
+    color: $color-eton-blue;
+  }
+}
+
+.open .grippie {
+  background: $color-lilac;
+}
